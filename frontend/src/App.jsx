@@ -2,8 +2,8 @@ import React from 'react'
 import { Routes,Route } from 'react-router-dom'
 import MyProfile from './pages/MyProfile'
 import MyAppointment from './pages/MyAppointment'
-import Login from './pages/login'
-import Contact from './pages/contact'
+import Login from './pages/Login'
+import Contact from './pages/Contact'
 import Doctors from './pages/Doctors'
 import Apointment from './pages/Apointment'
 import About from './pages/About'
@@ -18,7 +18,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home/> } />
         <Route path='/doctors' element={<Doctors/>}/>
-        <Route path='/doctors/:speciality' element={<Doctors/>}/>
+        <Route path='/doctors/:specialty' element={<Doctors/>}/>
         <Route path='/appointment/:docId' element={<Apointment/>}/>
         <Route path='/contacts' element={<Contact/>}/>
         <Route path='/login' element={<Login/>}/>
